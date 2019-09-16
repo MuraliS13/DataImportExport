@@ -1,11 +1,14 @@
 server:
   port: 23000
 # Zero MQ Configuration
-zeromq:  address-port: tcp://*:25566
+zeromq:
+  address-port: tcp://*:25566
 # MQTT Sender Details
-mqtt:  broker: localhost
+mqtt:
+  broker: localhost
   password: guest
-  port: 1883  topic: coreData
+  port: 1883
+  topic: coreData
   user-name: guest
   
 # Consul Health Check
