@@ -92,13 +92,22 @@
 	
 
 	
-		<repositories>
+	<repositories>
 		<repository>
-			<id>releases</id>
-			<name>EdgeX Release Repository</name>
-			<url>https://nexus.edgexfoundry.org/content/repositories/releases/</url>
+			<id>development</id>
+			<name>Saartha iot repository</name>
+			<url>https://codeserver.saartha.net:8443/repository/iiot-dev-group/</url>
 		</repository>
-	</repositories>	
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>development</id>
+			<name>Saartha iot repository</name>
+			<url>https://codeserver.saartha.net:8443/repository/iiot-dev/</url>
+		</repository>
+	</distributionManagement>
+
 
 	<build>
 		<plugins>
